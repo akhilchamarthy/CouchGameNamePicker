@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Couch Game Name Picker</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <h1>Couch Game Name Picker</h1>
+    <a href="https://greatgroupgames.com/four-on-a-couch">How to play the couch game</a>
+    <br>
+    <label for="names">Enter the names of the participants, separated by commas:</label>
+    <br>
+    <textarea id="names" rows="4" cols="50"></textarea>
+    <br>
+    <button id="generate-button">Generate Assignments</button>
+    <p>List of card will be below, only click the card with your name. Once you have seen your assignment, click on the card again to go back to your name. 
+      Red is participants, purple is assignments. Pass the device along.</p>
+    <div id="assignments">
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front">Participant:</div>
+          <div class="card__face card__face--back">assignment!</div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
